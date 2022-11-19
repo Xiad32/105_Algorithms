@@ -8,11 +8,11 @@
 #include <algorithm>
 #include <vector>
 
-std::vector<double> push_heap_of_ints(std::vector<double> data);
+std::vector<int> push_heap_of_ints(std::vector<int> data);
 
-std::vector<double> push_heap_of_ints(std::vector<double> data)
+std::vector<int> push_heap_of_ints(std::vector<int> data)
 {
-	data.push_back(8.88);
+	data.push_back(8);
 	
 	std::push_heap(
 		data.begin(),
