@@ -20,6 +20,17 @@ extern void reverse_alphabet();
 extern void stable__int();
 extern void is__();
 extern void is__until();
+extern void count_by_score();
+extern void accumilate_score();
+extern void partial_sum_score();
+extern void transform_exclusive_scan();
+extern void discounted_total();
+extern void adjacent_difference();
+extern void sample();
+extern void any_of();
+extern void none_of();
+extern void all_of();
+
 
 int main()
 {
@@ -38,7 +49,6 @@ int main()
 	std::cout << std::endl;
 
 	std::cout << "04. pop_heap:\n";
-	int max;
 	auto res = pop_from_ints_heap(data);
 	data = res.first;
 
@@ -102,5 +112,50 @@ int main()
 	is__until();;
 	std::cout << std::endl;
 
+	std::cout << "Land of Queries:\n===============\n";
+
+	//std::cout << "19. count\n";
+	//count_by_score();;
+	//std::cout << std::endl;
+
+	std::cout << "20. accumilate\n";
+	accumilate_score();
+	std::cout << std::endl;
+
+	std::cout << "21. partial_sum\n";
+	partial_sum_score();
+	std::cout << std::endl;
+
+	std::cout << "22. accumilate\n";
+	accumilate_score();
+	std::cout << std::endl;
+
+	std::cout << "23. transform_exclusive_scan\n";
+	transform_exclusive_scan();
+	std::cout << std::endl;
+
+	std::cout << "24. discounted_sum\n";
+	discounted_total();
+	std::cout << std::endl;
+
+	std::cout << "25. adjacent_difference\n";
+	adjacent_difference();
+	std::cout << std::endl;
+
+	std::cout << "26. sample\n";
+	sample();
+	std::cout << std::endl;
+	
+	std::cout << "27. all_of\n";
+	all_of();
+	std::cout << std::endl;
+
+	std::cout << "28. any_of\n";
+	any_of();
+	std::cout << std::endl;
+
+	std::cout << "29. none_of\n";
+	none_of();
+	std::cout << std::endl;
 	return 0;
 }
