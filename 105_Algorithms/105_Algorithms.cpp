@@ -30,71 +30,86 @@ extern void sample();
 extern void any_of();
 extern void none_of();
 extern void all_of();
+extern void equal();
+extern void is_permutation();
+extern void lexicographical_compare();
+extern void mismatch();
+extern void find();
+extern void adjacent_find();
+extern void equal_range();
+extern void search();
+extern void find_end();
+extern void find_first_of();
+extern void max_element();
+extern void min_element();
+extern void max_min_element();
 
 
 int main()
 {
+	int counter = 01;
+
 	std::cout << "Province of Heaps:\n==================\n";
 	
-	std::cout << "01. for_each:\n"; 
+	std::cout << counter++ <<". for_each:\n"; 
 	for_each_print();
 	std::cout << std::endl;
 
-	std::cout << "02. make_heap:\n";
+	std::cout << counter++ <<". make_heap:\n";
 	auto data = make_heap_from_ints();
 	std::cout << std::endl;
 
-	std::cout << "03. push_heap:\n";
+	std::cout << counter++ <<". push_heap:\n";
 	data = push_heap_of_ints(data);
 	std::cout << std::endl;
 
-	std::cout << "04. pop_heap:\n";
+	std::cout << counter++ <<". pop_heap:\n";
 	auto res = pop_from_ints_heap(data);
 	data = res.first;
 
 	std::cout << "\nShore of Sorting:\n=================\n";
 
-	std::cout << "05. sort\n";
+	std::cout << counter++ << ". sort\n";
 	sort_of_ints(data);
 	std::cout << std::endl;
 
-	std::cout << "06. partial_sort\n";
+	std::cout << counter++ << ". partial_sort\n";
 	partial_sort_of_ints(data);
 	std::cout << std::endl;
 
-	std::cout << "07. nth_element\n";
+	std::cout << counter++ << ". nth_element\n";
 	nth_element_of_ints(data, 4);
 	std::cout << std::endl;
 	
-	std::cout << "08. sort_heap\n";
+	std::cout << counter++ << ". sort_heap\n";
 	sort_heap_of_ints(data);
 	std::cout << std::endl;
 
-	std::cout << "09. inplace_merge\n";
+	std::cout << counter++ <<". inplace_merge\n";
 	inplace_merge_of_ints();
 	std::cout << std::endl;
 
 	std::cout << "Region of partitioning:\n======================\n";
 
-	std::cout << "10. partition_point\n";
+	std::cout << counter++ <<". partition_point\n";
 	partition_point_of_ints();
 	std::cout << std::endl;
 
 	std::cout << "Land of Permutations:\n====================\n";
 
-	std::cout << "11. rotate\n";
+	std::cout << counter++ <<". rotate\n";
 	rotate_int();
 	std::cout << std::endl;
 
-	std::cout << "12. shuffle\n";
+	std::cout << counter++ <<". shuffle\n";
 	shuffle_int();
 	std::cout << std::endl;
 
-	std::cout << "13./14. next_perm, prev_perm \n";
+	std::cout << counter++ <<"."<<counter++<<". next_perm, prev_perm \n";
 	next_prev_permutation();
 	std::cout << std::endl;
 
-	std::cout << "15. reverse\n";
+	std::cout << counter++ <<". reverse\n";
 	reverse_alphabet();
 	std::cout << std::endl;
 
@@ -104,58 +119,112 @@ int main()
 	stable__int();
 	std::cout << std::endl;
 
-	std::cout << "17. is_*\n";
+	std::cout << counter++ <<". is_*\n";
 	is__();
 	std::cout << std::endl;
 
-	std::cout << "18. is_*_until\n";
+	std::cout << counter++ <<". is_*_until\n";
 	is__until();;
 	std::cout << std::endl;
 
 	std::cout << "Land of Queries:\n===============\n";
 
-	//std::cout << "19. count\n";
+	//std::cout << counter++ <<". count\n";
 	//count_by_score();;
 	//std::cout << std::endl;
 
-	std::cout << "20. accumilate\n";
+	std::cout << counter++ <<". accumilate\n";
 	accumilate_score();
 	std::cout << std::endl;
 
-	std::cout << "21. partial_sum\n";
+	std::cout << counter++ <<". partial_sum\n";
 	partial_sum_score();
 	std::cout << std::endl;
 
-	std::cout << "22. accumilate\n";
+	std::cout << counter++ <<". accumilate\n";
 	accumilate_score();
 	std::cout << std::endl;
 
-	std::cout << "23. transform_exclusive_scan\n";
+	std::cout << counter++ <<". transform_exclusive_scan\n";
 	transform_exclusive_scan();
 	std::cout << std::endl;
 
-	std::cout << "24. discounted_sum\n";
+	std::cout << counter++ <<". discounted_sum\n";
 	discounted_total();
 	std::cout << std::endl;
 
-	std::cout << "25. adjacent_difference\n";
+	std::cout << counter++ <<". adjacent_difference\n";
 	adjacent_difference();
 	std::cout << std::endl;
 
-	std::cout << "26. sample\n";
+	std::cout << counter++ <<". sample\n";
 	sample();
 	std::cout << std::endl;
 	
-	std::cout << "27. all_of\n";
+	std::cout << counter++ <<". all_of\n";
 	all_of();
 	std::cout << std::endl;
 
-	std::cout << "28. any_of\n";
+	std::cout << counter++ <<". any_of\n";
 	any_of();
 	std::cout << std::endl;
 
-	std::cout << "29. none_of\n";
+	std::cout << counter++ <<". none_of\n";
 	none_of();
 	std::cout << std::endl;
+
+	std::cout << counter++ <<". equal\n";
+	equal();
+	std::cout << std::endl;
+
+	std::cout << counter++ <<". is_permuatation\n";
+	is_permutation();
+	std::cout << std::endl;
+
+	std::cout << counter++ <<". lexicographical_compare\n";
+	lexicographical_compare();
+	std::cout << std::endl;
+
+	std::cout << counter++ <<". mismatch\n";
+	mismatch();
+	std::cout << std::endl;
+
+	std::cout << counter++ <<". find\n";
+	find();
+	std::cout << std::endl;
+
+	std::cout << counter++ <<". adjacent_find\n";
+	adjacent_find();
+	std::cout << std::endl;
+
+	std::cout << counter++ <<". equal_range\n";
+	equal_range();
+	std::cout << std::endl;
+
+	std::cout << counter++ <<". search\n";
+	search();
+	std::cout << std::endl;
+
+	std::cout << counter++ <<". find_end\n";
+	find_end();
+	std::cout << std::endl;
+
+	std::cout << counter++ <<". find_first_of\n";
+	find_first_of();
+	std::cout << std::endl;
+
+	std::cout << counter++ <<". max_element\n";
+	max_element();
+	std::cout << std::endl;
+
+	std::cout << counter++ <<". min_element\n";
+	min_element();
+	std::cout << std::endl;
+
+	std::cout << counter++ <<". max_min_element\n";
+	max_min_element();
+	std::cout << std::endl;
+
+
 	return 0;
 }
