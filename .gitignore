@@ -46,5 +46,5 @@ bld/
 [Oo]bj/
 [Ll]og/
 [Ll]ogs/
-out/*
-.vs/*
+**/out/*
+**/.vs/*
