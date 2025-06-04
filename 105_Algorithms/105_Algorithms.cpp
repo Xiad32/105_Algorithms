@@ -47,69 +47,69 @@ extern void max_min_element();
 
 int main()
 {
-	int counter = 01;
+	int algo_number = 01;
 
 	std::cout << "Province of Heaps:\n==================\n";
 	
-	std::cout << counter++ <<". for_each:\n"; 
+	std::cout << algo_number++ <<". for_each:\n"; 
 	for_each_print();
 	std::cout << std::endl;
 
-	std::cout << counter++ <<". make_heap:\n";
+	std::cout << algo_number++ <<". make_heap:\n";
 	auto data = make_heap_from_ints();
 	std::cout << std::endl;
 
-	std::cout << counter++ <<". push_heap:\n";
+	std::cout << algo_number++ <<". push_heap:\n";
 	data = push_heap_of_ints(data);
 	std::cout << std::endl;
 
-	std::cout << counter++ <<". pop_heap:\n";
+	std::cout << algo_number++ <<". pop_heap:\n";
 	auto res = pop_from_ints_heap(data);
 	data = res.first;
 
 	std::cout << "\nShore of Sorting:\n=================\n";
 
-	std::cout << counter++ << ". sort\n";
+	std::cout << algo_number++ << ". sort\n";
 	sort_of_ints(data);
 	std::cout << std::endl;
 
-	std::cout << counter++ << ". partial_sort\n";
+	std::cout << algo_number++ << ". partial_sort\n";
 	partial_sort_of_ints(data);
 	std::cout << std::endl;
 
-	std::cout << counter++ << ". nth_element\n";
+	std::cout << algo_number++ << ". nth_element\n";
 	nth_element_of_ints(data, 4);
 	std::cout << std::endl;
 	
-	std::cout << counter++ << ". sort_heap\n";
+	std::cout << algo_number++ << ". sort_heap\n";
 	sort_heap_of_ints(data);
 	std::cout << std::endl;
 
-	std::cout << counter++ <<". inplace_merge\n";
+	std::cout << algo_number++ <<". inplace_merge\n";
 	inplace_merge_of_ints();
 	std::cout << std::endl;
 
 	std::cout << "Region of partitioning:\n======================\n";
 
-	std::cout << counter++ <<". partition_point\n";
+	std::cout << algo_number++ <<". partition_point\n";
 	partition_point_of_ints();
 	std::cout << std::endl;
 
 	std::cout << "Land of Permutations:\n====================\n";
 
-	std::cout << counter++ <<". rotate\n";
+	std::cout << algo_number++ <<". rotate\n";
 	rotate_int();
 	std::cout << std::endl;
 
-	std::cout << counter++ <<". shuffle\n";
+	std::cout << algo_number++ <<". shuffle\n";
 	shuffle_int();
 	std::cout << std::endl;
 
-	std::cout << counter++ <<"."<<counter++<<". next_perm, prev_perm \n";
+	std::cout << algo_number++ <<"."<<algo_number++<<". next_perm, prev_perm \n";
 	next_prev_permutation();
 	std::cout << std::endl;
 
-	std::cout << counter++ <<". reverse\n";
+	std::cout << algo_number++ <<". reverse\n";
 	reverse_alphabet();
 	std::cout << std::endl;
 
@@ -119,11 +119,11 @@ int main()
 	stable__int();
 	std::cout << std::endl;
 
-	std::cout << counter++ <<". is_*\n";
+	std::cout << algo_number++ <<". is_*\n";
 	is__();
 	std::cout << std::endl;
 
-	std::cout << counter++ <<". is_*_until\n";
+	std::cout << algo_number++ <<". is_*_until\n";
 	is__until();;
 	std::cout << std::endl;
 
@@ -133,95 +133,95 @@ int main()
 	//count_by_score();;
 	//std::cout << std::endl;
 
-	std::cout << counter++ <<". accumilate\n";
+	std::cout << algo_number++ <<". accumilate\n";
 	accumilate_score();
 	std::cout << std::endl;
 
-	std::cout << counter++ <<". partial_sum\n";
+	std::cout << algo_number++ <<". partial_sum\n";
 	partial_sum_score();
 	std::cout << std::endl;
 
-	std::cout << counter++ <<". accumilate\n";
+	std::cout << algo_number++ <<". accumilate\n";
 	accumilate_score();
 	std::cout << std::endl;
 
-	std::cout << counter++ <<". transform_exclusive_scan\n";
+	std::cout << algo_number++ <<". transform_exclusive_scan\n";
 	transform_exclusive_scan();
 	std::cout << std::endl;
 
-	std::cout << counter++ <<". discounted_sum\n";
+	std::cout << algo_number++ <<". discounted_sum\n";
 	discounted_total();
 	std::cout << std::endl;
 
-	std::cout << counter++ <<". adjacent_difference\n";
+	std::cout << algo_number++ <<". adjacent_difference\n";
 	adjacent_difference();
 	std::cout << std::endl;
 
-	std::cout << counter++ <<". sample\n";
+	std::cout << algo_number++ <<". sample\n";
 	sample();
 	std::cout << std::endl;
 	
-	std::cout << counter++ <<". all_of\n";
+	std::cout << algo_number++ <<". all_of\n";
 	all_of();
 	std::cout << std::endl;
 
-	std::cout << counter++ <<". any_of\n";
+	std::cout << algo_number++ <<". any_of\n";
 	any_of();
 	std::cout << std::endl;
 
-	std::cout << counter++ <<". none_of\n";
+	std::cout << algo_number++ <<". none_of\n";
 	none_of();
 	std::cout << std::endl;
 
-	std::cout << counter++ <<". equal\n";
+	std::cout << algo_number++ <<". equal\n";
 	equal();
 	std::cout << std::endl;
 
-	std::cout << counter++ <<". is_permuatation\n";
+	std::cout << algo_number++ <<". is_permuatation\n";
 	is_permutation();
 	std::cout << std::endl;
 
-	std::cout << counter++ <<". lexicographical_compare\n";
+	std::cout << algo_number++ <<". lexicographical_compare\n";
 	lexicographical_compare();
 	std::cout << std::endl;
 
-	std::cout << counter++ <<". mismatch\n";
+	std::cout << algo_number++ <<". mismatch\n";
 	mismatch();
 	std::cout << std::endl;
 
-	std::cout << counter++ <<". find\n";
+	std::cout << algo_number++ <<". find\n";
 	find();
 	std::cout << std::endl;
 
-	std::cout << counter++ <<". adjacent_find\n";
+	std::cout << algo_number++ <<". adjacent_find\n";
 	adjacent_find();
 	std::cout << std::endl;
 
-	std::cout << counter++ <<". equal_range\n";
+	std::cout << algo_number++ <<". equal_range\n";
 	equal_range();
 	std::cout << std::endl;
 
-	std::cout << counter++ <<". search\n";
+	std::cout << algo_number++ <<". search\n";
 	search();
 	std::cout << std::endl;
 
-	std::cout << counter++ <<". find_end\n";
+	std::cout << algo_number++ <<". find_end\n";
 	find_end();
 	std::cout << std::endl;
 
-	std::cout << counter++ <<". find_first_of\n";
+	std::cout << algo_number++ <<". find_first_of\n";
 	find_first_of();
 	std::cout << std::endl;
 
-	std::cout << counter++ <<". max_element\n";
+	std::cout << algo_number++ <<". max_element\n";
 	max_element();
 	std::cout << std::endl;
 
-	std::cout << counter++ <<". min_element\n";
+	std::cout << algo_number++ <<". min_element\n";
 	min_element();
 	std::cout << std::endl;
 
-	std::cout << counter++ <<". max_min_element\n";
+	std::cout << algo_number++ <<". max_min_element\n";
 	max_min_element();
 	std::cout << std::endl;
 
