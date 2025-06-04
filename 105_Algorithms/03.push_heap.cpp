@@ -8,9 +8,9 @@
 #include <algorithm>
 #include <vector>
 
-std::vector<int> push_heap_of_ints(std::vector<int> data);
+std::vector<float> push_heap_of_floats(std::vector<float> data);
 
-std::vector<int> push_heap_of_ints(std::vector<int> data)
+std::vector<float> push_heap_of_floats(std::vector<float> data)
 {
 	data.push_back(8);
 	
@@ -21,7 +21,7 @@ std::vector<int> push_heap_of_ints(std::vector<int> data)
 	std::for_each(
 		data.begin(),
 		data.end(),
-		[](int datum)
+		[](float datum)
 	{
 		std::cout << datum << ",";
 	}

@@ -14,7 +14,6 @@ void for_each_print();
 
 void for_each_print()
 {
-	// Data:
 	const auto data = GradesGenerator::getScores();
 
 	std::for_each(

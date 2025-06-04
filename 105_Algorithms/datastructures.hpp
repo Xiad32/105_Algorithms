@@ -1,3 +1,6 @@
+#include <iomanip>
+#include <iostream>
+
 struct CourseStudentScore {
 	std::string course_name;
 	float score;

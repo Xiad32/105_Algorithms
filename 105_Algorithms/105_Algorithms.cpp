@@ -4,8 +4,8 @@
 #include "105_Algorithms.h"
 
 extern void for_each_print();
-extern std::vector<int> make_heap_from_ints();
-extern std::vector<int> push_heap_of_ints(std::vector<int> data);
+extern std::vector<float> make_heap_from_floats();
+extern std::vector<int> push_heap_of_floats(std::vector<int> data);
 extern std::pair<std::vector<int>, int> pop_from_ints_heap(std::vector<int> data);
 extern void sort_of_ints(std::vector<int> data);
 extern void partial_sort_of_ints(std::vector<int> data);
@@ -56,34 +56,34 @@ int main()
 	std::cout << std::endl;
 
 	std::cout << algo_number++ <<". make_heap:\n";
-	auto data = make_heap_from_ints();
+	auto data = make_heap_from_floats();
 	std::cout << std::endl;
 
-	std::cout << algo_number++ <<". push_heap:\n";
-	data = push_heap_of_ints(data);
-	std::cout << std::endl;
+	//std::cout << algo_number++ <<". push_heap:\n";
+	//data = push_heap_of_ints(data);
+	//std::cout << std::endl;
 
-	std::cout << algo_number++ <<". pop_heap:\n";
-	auto res = pop_from_ints_heap(data);
-	data = res.first;
+	//std::cout << algo_number++ <<". pop_heap:\n";
+	//auto res = pop_from_ints_heap(data);
+	//data = res.first;
 
-	std::cout << "\nShore of Sorting:\n=================\n";
+	//std::cout << "\nShore of Sorting:\n=================\n";
 
-	std::cout << algo_number++ << ". sort\n";
-	sort_of_ints(data);
-	std::cout << std::endl;
+	//std::cout << algo_number++ << ". sort\n";
+	//sort_of_ints(data);
+	//std::cout << std::endl;
 
-	std::cout << algo_number++ << ". partial_sort\n";
-	partial_sort_of_ints(data);
-	std::cout << std::endl;
+	//std::cout << algo_number++ << ". partial_sort\n";
+	//partial_sort_of_ints(data);
+	//std::cout << std::endl;
 
-	std::cout << algo_number++ << ". nth_element\n";
-	nth_element_of_ints(data, 4);
-	std::cout << std::endl;
-	
-	std::cout << algo_number++ << ". sort_heap\n";
-	sort_heap_of_ints(data);
-	std::cout << std::endl;
+	//std::cout << algo_number++ << ". nth_element\n";
+	//nth_element_of_ints(data, 4);
+	//std::cout << std::endl;
+	//
+	//std::cout << algo_number++ << ". sort_heap\n";
+	//sort_heap_of_ints(data);
+	//std::cout << std::endl;
 
 	std::cout << algo_number++ <<". inplace_merge\n";
 	inplace_merge_of_ints();
