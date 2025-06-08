@@ -8,9 +8,9 @@
 #include <algorithm>
 #include <vector>
 
-std::pair<std::vector<int>, int> pop_from_ints_heap(std::vector<int> data);
+std::pair<std::vector<float>, float> pop_from_floats_heap(std::vector<float> data);
 
-std::pair<std::vector<int>, int> pop_from_ints_heap(std::vector<int> data)
+std::pair<std::vector<float>, float> pop_from_floats_heap(std::vector<float> data)
 {
 	
 	std::pop_heap(
@@ -30,5 +30,5 @@ std::pair<std::vector<int>, int> pop_from_ints_heap(std::vector<int> data)
 
 	data.pop_back();
 
-	return std::pair<std::vector<int>, int> {data, max};
+	return std::pair<std::vector<float>, float> {data, max};
 }
