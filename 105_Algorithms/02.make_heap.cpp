@@ -13,24 +13,8 @@ std::vector<float> make_heap_from_floats();
 
 std::vector<float> make_heap_from_floats()
 {
-	std::vector<float> scores{};
 	const auto data = GradesGenerator::getScores();
-
-	std::for_each(
-		data.begin(),
-		data.end(),
-		[&scores](const StudentGrades student)
-		{
-			std::for_each(student.scores.begin(),
-				student.scores.end(),
-				[&scores](const CourseStudentScore course_grade) {
-					course_grade.print();
-					std::cout << "Score: " << course_grade.score << std::endl;
-					scores.push_back(course_grade.score);
-				});
-		}
-	);
-
+	auto scores = StudentGrades::getFlatScores(data);
 
 	std::make_heap(
 		scores.begin(),
