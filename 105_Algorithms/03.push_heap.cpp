@@ -11,10 +11,20 @@
 
 std::vector<float> push_heap_of_floats(std::vector<float> data);
 
+/*
+Algorithm 03/105:
+-----------------
+
+The teacher realized that one student scores were omitted
+from the data set. She wanted to include these in her analytics.
+Having a head already built, she used push_heap to add the scores
+while maintaining the heap order.
+*/
+
+
 std::vector<float> push_heap_of_floats(std::vector<float> data)
 {
-	// Some student scores were not in the database
-	// To make up for it, we add a their scores manually
+
 	const StudentGrades john_doe_scores = {
 		"John", "Doe",
 		{
@@ -36,6 +46,8 @@ std::vector<float> push_heap_of_floats(std::vector<float> data)
 	std::push_heap(
 		data.begin(),
 		data.end());
+
+	std::cout << "Adding John Doe's Scores in the heap:\n";
 
 	std::for_each(
 		data.begin(),

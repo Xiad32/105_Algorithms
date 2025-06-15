@@ -165,8 +165,8 @@
     <ClCompile Include="40.max_element.cpp" />
     <ClCompile Include="41.min_element.cpp" />
     <ClCompile Include="42.max_min_element.cpp" />
-    <ClCompile Include="05.sort_of_ints.cpp" />
-    <ClCompile Include="06.partial_sort_of_ints.cpp" />
+    <ClCompile Include="05.sort.cpp" />
+    <ClCompile Include="06.partial_sort.cpp" />
     <ClCompile Include="07.nth_element.cpp" />
     <ClCompile Include="08.sort_heap.cpp" />
     <ClCompile Include="09.inplace_merge.cpp" />

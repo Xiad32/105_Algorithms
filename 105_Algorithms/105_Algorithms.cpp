@@ -7,9 +7,9 @@ extern void for_each_print();
 extern std::vector<float> make_heap_from_floats();
 extern std::vector<float> push_heap_of_floats(std::vector<float> data);
 extern std::pair<std::vector<float>, float> pop_from_floats_heap(std::vector<float> data);
-extern void sort_of_ints(std::vector<int> data);
-extern void partial_sort_of_ints(std::vector<int> data);
-extern void nth_element_of_ints(std::vector<int> data, int nth_position);
+extern void sort_of_floats(std::vector<float> data);
+extern void partial_sort_of_floats();
+extern void nth_element_of_floats();
 extern void sort_heap_of_ints(std::vector<int> data);
 extern void inplace_merge_of_ints();
 extern void partition_point_of_ints();
@@ -67,20 +67,20 @@ int main()
 	auto res = pop_from_floats_heap(data);
 	data = res.first;
 
-	//std::cout << "\nShore of Sorting:\n=================\n";
+	std::cout << "\nShore of Sorting:\n=================\n";
 
-	//std::cout << algo_number++ << ". sort\n";
-	//sort_of_ints(data);
-	//std::cout << std::endl;
+	std::cout << algo_number++ << ". sort\n";
+	sort_of_floats(data);
+	std::cout << std::endl;
 
-	//std::cout << algo_number++ << ". partial_sort\n";
-	//partial_sort_of_ints(data);
-	//std::cout << std::endl;
+	std::cout << algo_number++ << ". partial_sort\n";
+	partial_sort_of_floats();
+	std::cout << std::endl;
 
-	//std::cout << algo_number++ << ". nth_element\n";
-	//nth_element_of_ints(data, 4);
-	//std::cout << std::endl;
-	//
+	std::cout << algo_number++ << ". nth_element\n";
+	nth_element_of_floats();
+	std::cout << std::endl;
+	
 	//std::cout << algo_number++ << ". sort_heap\n";
 	//sort_heap_of_ints(data);
 	//std::cout << std::endl;

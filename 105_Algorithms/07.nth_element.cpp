@@ -9,11 +9,19 @@
 #include <iostream>
 #include <algorithm>
 #include <vector>
+#include "datastructures.hpp"
 
-void nth_element_of_ints(std::vector<int> data, int nth_position);
+void nth_element_of_floats();
 
-void nth_element_of_ints(std::vector<int> data, int nth_position)
+/*
+The teacher decided that the lowest 10 scores will be given an F score.
+She wanted to find the 10th lowest score to be able to determine the pass threshold
+*/
+
+void nth_element_of_floats()
 {
+	const int nth_position = 10;
+	auto data = StudentGrades::getFlatScores(GradesGenerator::getScores());
 	const auto middle_iter = data.begin() + nth_position;
 	
 	std::nth_element(
@@ -21,10 +29,12 @@ void nth_element_of_ints(std::vector<int> data, int nth_position)
 		middle_iter,
 		data.end());
 
+	std::cout << "Failing Scores:\n";
+
 	std::for_each(
 		data.begin(),
-		data.end(),
-		[](int datum)
+		middle_iter,
+		[](float datum)
 	{
 		std::cout << datum << ",";
 	}
